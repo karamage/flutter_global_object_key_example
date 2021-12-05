@@ -17,8 +17,8 @@ class CounterPage extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // ここでCounterのincrementCounter()を呼び出す
-          counterKey.currentState?.incrementCounter();
+          final count = counterKey.currentState?.counter ?? 0;
+          counterKey.currentState?.setCounter(count + 1);
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),

@@ -8,18 +8,18 @@ class Counter extends StatefulWidget {
 }
 
 class CounterState extends State<Counter> {
-  int _counter = 0;
+  int counter = 0;
 
-  void incrementCounter() {
+  void setCounter(int value) {
     setState(() {
-      _counter++;
+      counter = value;
     });
   }
 
   @override
   Widget build(BuildContext context) {
     return Text(
-      '$_counter',
+      '$counter',
       style: Theme.of(context).textTheme.headline4,
     );
   }
