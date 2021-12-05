@@ -1,4 +1,4 @@
-# flutter_global_object_key_example
+# Flutter GlobalObjectKey Example
 
 This is a sample program that uses GlobalObjectKey to call child methods from parent in Flutter Widget.
 
