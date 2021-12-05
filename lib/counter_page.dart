@@ -7,16 +7,18 @@ class CounterPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final counterKey = GlobalObjectKey<CounterState>(context);
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
       ),
       body: Center(
-        child: Counter(),
+        child: Counter(key: counterKey),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          // TODO ここでCounterのincrementCounter()を呼び出したい
+          // ここでCounterのincrementCounter()を呼び出す
+          counterKey.currentState?.incrementCounter();
         },
         tooltip: 'Increment',
         child: Icon(Icons.add),

@@ -4,10 +4,10 @@ class Counter extends StatefulWidget {
   Counter({Key? key}) : super(key: key);
 
   @override
-  _CounterState createState() => _CounterState();
+  CounterState createState() => CounterState();
 }
 
-class _CounterState extends State<Counter> {
+class CounterState extends State<Counter> {
   int _counter = 0;
 
   void incrementCounter() {
