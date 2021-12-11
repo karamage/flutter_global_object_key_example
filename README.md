@@ -3,6 +3,8 @@
 This is a sample program that uses GlobalObjectKey to call child methods from parent in Flutter Widget.
 Use GlobalObjectKey to call child methods from the parent Widget and to refer to its state.
 
+https://qiita.com/karamage/items/19d53a5870c32bf59742
+
 ## How do I call a method of a child from its parent?
 In Flutter, is there ever a time when you want to call a method of a child widget from a parent widget?
 
